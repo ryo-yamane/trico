@@ -35,3 +35,95 @@
 　　サロン・・・・管理画面（予約、クーポン作成、メニュー作成、SNS投稿連携）
 
 ・DB設計						
+## users テーブル
+
+| Column             | Type       | Options     |
+| ------------------ | -----------| ----------- |
+| nickname           | string     | null: false |
+| first_name         | string     | null: false |
+| last_name          | string     | null: false |
+| first_name_kana    | string     | null: false |
+| last_name_kana     | string     | null: false |
+| email              | string     | null: false , unique: true|
+| encrypted_password | string     | null: false |
+| birthday           | date       | null: false |
+
+
+### Association
+has_many :comments
+has_many :bookings
+
+
+##  salonsテーブル
+
+| Column           | Type          | Options     |
+| ---------------- | ------------- | ----------- |
+| salon_name       | string        | null: false |
+| address          | string          | null: false |
+| phone_number     | string        | null: false |
+| how_to_pay_id    | integer       | null: false |
+| salon_concept_id | integer       | null: false |
+| nearest_station  | string        | null: false |
+| rest_day         | integer       | null: false |
+
+
+### Association
+has_many :bookings
+has_many :menus
+has_many :comments
+has_one :schedule
+
+
+
+## menu テーブル
+
+| Column                        | Type       | Options      |
+| ----------------------------- | ---------- | ------------ |
+| menu_name                     | string     | null: false  |
+| menu_price                    | integer    | null: false  |
+| menu_content                  | text       | null: false  |
+| salon                         | references | null: false,foreign_key: true  |
+
+### Association
+belongs_to :salon
+
+
+
+
+## bookings テーブル
+
+| Column                        | Type        |Options                       |
+| ----------------------------- | ----------  | ---------------------------- |
+| user                          | references  |null: false, foreign_key: true|
+| salon                         | references  |null: false, foreign_key: true|
+| menu                          | references  |null: false, foreign_key: true|
+
+
+### Association
+belongs_to :user
+belongs_to :salon
+belongs_to :menu
+
+## comments テーブル
+
+| Column                        | Type        |Options                       |
+| ----------------------------- | ----------  | ---------------------------- |
+| text                          | text        |null: false                   |
+| user                          | references  |null: false, foreign_key: true|
+| salon                         | references  |null: false, foreign_key: true|
+
+
+### Association
+belongs_to :user
+belongs_to :salon
+
+## schedule テーブル
+
+| Column                        | Type        |Options                       |
+| ----------------------------- | ----------  | ---------------------------- |
+| booking                       | references  |null: false, foreign_key: true|
+| salon                         | references  |null: false, foreign_key: true|
+
+
+### Association
+belongs_to :salon
