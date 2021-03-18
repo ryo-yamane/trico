@@ -55,16 +55,21 @@ has_many :bookings
 
 ##  salonsテーブル
 
-| Column           | Type          | Options     |
-| ---------------- | ------------- | ----------- |
-| salon_name       | string        | null: false |
-| address          | string        | null: false |
-| phone_number     | string        | null: false |
-| how_to_pay_id    | integer       | null: false |
-| salon_concept_id | integer       | null: false |
-| nearest_station  | string        | null: false |
-| rest_day_id      | integer       | null: false |
-| sns_account      | text          | null: false |
+| Column                | Type          | Options     |
+| ----------------      | ------------- | ----------- |
+| owner_first_name      | string        | null: false |
+| owner_last_name       | string        | null: false |
+| owner_first_name_kana | string        | null: false |
+| owner_last_name_kana  | string        | null: false |
+| salon_name            | string        | null: false |
+| salon_name            | string        | null: false |
+| address               | string        | null: false |
+| phone_number          | string        | null: false |
+| how_to_pay_id         | integer       | null: false |
+| salon_concept_id      | integer       | null: false |
+| nearest_station       | string        | null: false |
+| rest_day_id           | integer       | null: false |
+| sns_account           | text          | null: false |
 
 
 ### Association
