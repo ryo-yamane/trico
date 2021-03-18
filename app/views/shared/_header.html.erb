@@ -2,8 +2,13 @@
     <div>
       <h3 class="float-md-start mb-0">trico</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
+
         <a class="nav-link active" aria-current="page" href="#">About us</a>
-        <a class="nav-link" href="#">contact</a>
+        <a class="nav-link active" href="#">contact</a>
+        <% if user_signed_in?%>
+        <%= link_to current_user.nickname, "#", class: "nav-link active" %>
+        <%= link_to 'log out', destroy_user_session_path, method: :delete, class: "nav-link active"%>
+        <% end %>
       </nav>
     </div>
   </header>
