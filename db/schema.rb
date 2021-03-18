@@ -15,6 +15,10 @@ ActiveRecord::Schema.define(version: 2021_03_17_093736) do
   create_table "owners", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "owner_first_name", null: false
+    t.string "owner_last_name", null: false
+    t.string "owner_first_name_kana", null: false
+    t.string "owner_last_name_kana", null: false
     t.string "salon_name", null: false
     t.string "address", null: false
     t.string "phone_number", null: false
