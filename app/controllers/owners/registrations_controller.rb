@@ -5,9 +5,10 @@ class Owners::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
-  # def new
-  #   super
-  # end
+   def new
+    @pay =  Owner.where('how_to_pay_id IN(?)',params[:hpw_to_pay_id])
+    super
+   end
 
   # POST /resource
   # def create
