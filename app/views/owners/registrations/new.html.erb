@@ -4,6 +4,11 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "owners/shared/error_messages", resource: resource %>
 
+<div class="field">
+    <%= f.label :salon_name %><br />
+    <%= f.text_area :salon_name, class:"aaa", id:"salon_name", placeholder:"例) 太郎", maxlength:"20"  %>
+ </div> 
+
  <div class="input-name-wrap">
  <%= f.label :name %><br />
     <%= f.text_area :owner_last_name, class:"input-name", id:"last-name", placeholder:"例) 山田" %>
@@ -17,7 +22,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, class:"aaa", autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
@@ -25,19 +30,45 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, class:"aaa",autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, class:"aaa",autocomplete: "new-password" %>
   </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address, class:"aaa", id:"address", placeholder:"例) 太郎", maxlength:"20"  %>
+  </div> 
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.text_area :phone_number, class:"aaa", id:"phone_number", placeholder:"例) 太郎", maxlength:"20"  %>
+  </div> 
+ 
+  <div class="field">
+    <%= f.label :nearest_station %><br />
+    <%= f.text_area :nearest_station, class:"aaa", id:"nearest-station", placeholder:"例) 太郎", maxlength:"20"  %>
+  </div> 
+  <div class="field">
+  <%= f.label :how_to_pay %><br />
   <%= f.collection_select(:how_to_pay_id, HowToPay.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+  </div>
+  <div class="field">
+  <%= f.label :rest_day %><br />
   <%= f.collection_select(:rest_day_id, RestDay.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+  </div>
+  <div class="field">
+  <%= f.label :salon_concept %><br />
   <%= f.collection_select(:salon_concept_id, SalonConcept.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  </div>
+<br />
+  <div class="register-btn">
+    <%= f.submit "Sign up",class:"register-red-btn"  %>
   </div>
 <% end %>
 
-<%= render "owners/shared/links" %>
+<%#<%= render "owners/shared/links" %>
+
+<%= render "shared/footer" %>
+</div>

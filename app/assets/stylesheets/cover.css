@@ -61,7 +61,25 @@ body {
   color:#fff!important;
   text-decoration: none!important;
   font-size: calc(1.375rem + 1.5vw)!important;
+}
 
+body {
+ height: 1000px;
+}
+
+.select-box {
+  
+  width: 50%;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 
