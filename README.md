@@ -1,6 +1,5 @@
 # README
 ・アプリ名	trico
-・概要(このアプリでできることを書いて下さい)
 　∟ユーザー・・・予約機能、レビュー投稿、クーポン取得、サロン紹介ページ閲覧、
 　　サロン・・・・スケジュール管理、クーポン作成、メニュー作成、ユーザーが閲覧するサロンページに店のインスタ投稿を掲載　
 　
@@ -56,15 +55,21 @@ has_many :bookings
 
 ##  salonsテーブル
 
-| Column           | Type          | Options     |
-| ---------------- | ------------- | ----------- |
-| salon_name       | string        | null: false |
-| address          | string          | null: false |
-| phone_number     | string        | null: false |
-| how_to_pay_id    | integer       | null: false |
-| salon_concept_id | integer       | null: false |
-| nearest_station  | string        | null: false |
-| rest_day         | integer       | null: false |
+| Column                | Type          | Options     |
+| ----------------      | ------------- | ----------- |
+| owner_first_name      | string        | null: false |
+| owner_last_name       | string        | null: false |
+| owner_first_name_kana | string        | null: false |
+| owner_last_name_kana  | string        | null: false |
+| salon_name            | string        | null: false |
+| salon_name            | string        | null: false |
+| address               | string        | null: false |
+| phone_number          | string        | null: false |
+| how_to_pay_id         | integer       | null: false |
+| salon_concept_id      | integer       | null: false |
+| nearest_station       | string        | null: false |
+| rest_day_id           | integer       | null: false |
+| sns_account           | text          | null: false |
 
 
 ### Association
