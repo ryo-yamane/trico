@@ -5,9 +5,8 @@
       <% end %>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <div class="nav-link active" aria-current="page">sign up</div>
-        <%= link_to 'Facebook', "#", class: "nav-link active facebook" %>
-        <%= link_to 'Google', "#", class: "nav-link active google" %>
-
+        <%= link_to 'Facebook', user_facebook_omniauth_authorize_path, method: :post, class: "nav-link active facebook" %>
+        <%= link_to 'Google', user_google_oauth2_omniauth_authorize_path, method: :post, class: "nav-link active google" %>
       </nav>
     </div>
   </header>
