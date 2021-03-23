@@ -26,22 +26,22 @@
     <%= f.email_field :email, class:"aaa", autofocus: true, autocomplete: "email" %>
   </div>
 
-  <%if @sns_id.present? %>
-    <%= hidden_field_tag :sns_auth, true%>
-  <% else %>
+ <%if @sns_id.present? %>
+   <%= hidden_field_tag :sns_auth, true %>
+ <% else %>
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password,class:"aaa", autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, class:"aaa", autocomplete: "new-password" %>
-  </div>
+     <%= f.label :password %>
+     <% @minimum_password_length %>
+     <em>(<%= @minimum_password_length %> characters minimum)</em>
+     <br />
+     <%= f.password_field :password, class:"aaa", autocomplete: "new-password" %>
+   </div>
+   <div class="field">
+     <%= f.label :password_confirmation %><br />
+     <%= f.password_field :password_confirmation, class:"aaa", autocomplete: "new-password" %>
+   </div>
   <% end %>
+
 <%= f.label :birthday %><br>
   <div class='input-birth-wrap'>
       <%= raw sprintf(
