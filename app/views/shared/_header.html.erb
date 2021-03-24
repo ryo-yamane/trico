@@ -4,16 +4,16 @@
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#">About us</a>
         <a class="nav-link active" href="#">contact</a>
-        <% if user_signed_in?%>
-        <%= link_to current_user.nickname, "#", class: "nav-link active" %>
-        <%= link_to 'log out', destroy_user_session_path, method: :delete, class: "nav-link active"%>
-        <% else %>
-        <%= link_to 'log in', new_user_session_path, class: "nav-link active" %>
-        <% end %>
 
-        <% if owner_signed_in?%>
-        <%= link_to current_owner.salon_name, "#", class: "nav-link active" %>
-        <%= link_to 'log out', destroy_owner_session_path, method: :delete, class: "nav-link active"%>
+        <% if user_signed_in?%>
+         <%= link_to current_user.nickname, "#", class: "nav-link active" %>
+         <%= link_to 'log out', destroy_user_session_path, method: :delete, class: "nav-link active"%>
+        <% elsif owner_signed_in?%>
+         <%= link_to current_owner.salon_name, "#", class: "nav-link active" %>
+         <%= link_to 'log out', destroy_owner_session_path, method: :delete, class: "nav-link active"%>
+        <% else %>
+         <%= link_to 'user log in', new_user_session_path, class: "nav-link active" %>
+         <%= link_to 'owner log in', new_owner_session_path, class: "nav-link active" %>
         <% end %>
       </nav>
     </div>
