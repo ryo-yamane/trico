@@ -3,7 +3,13 @@
 
 <main class="px-3">
   <div class="main-content">
+   <% if user_signed_in? %>
+    <h1>user welcome!</h1>
+    <% elsif  owner_signed_in?%>
+    <h1>owner welcome!</h1>
+    <% else %>
     <h1><%= link_to "you wanna booking?", choose_index_salons_path, class: "main-word" %></h1> 
+    <% end %>
   </div>
 </main>
 <%= render "shared/footer" %>

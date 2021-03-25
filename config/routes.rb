@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
  root to: 'salons#index'
-  resources :users, only: :new
+  resources :users, only: [:new, :index]
   resources :salons, only: [:index] do
 
     collection do
