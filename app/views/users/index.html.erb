@@ -2,7 +2,7 @@
 <%= render "user_header" %>
 <div class='main'>
 
-  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
+  <%# 画面上部の「非日常をあなたに」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
       非日常をあなたに
@@ -18,114 +18,198 @@
     <%#  <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
     <%#</div>%>
   </div>
-  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
+  <%# /画面上部の「非日常をあなたに」帯部分  %>
 
-  <%# FURIMAが選ばれる3つの理由部分 %>
+  <%# 予約選択 %>
   <div class='select-reason-contents'>
     <h2 class='title'>
-      FURIMAが選ばれる3つの理由
+      美容室・各種サロンを予約する
     </h2>
+    <div>
     <ul class='reason-lists'>
       <li class='list'>
-        <%= image_tag "furima-intro01.png", class:"list-pict" %>
-        <span class='reason-list-number'>1</span>
-        <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>3分</span>
-          ですぐに出品
-        </h3>
-        <p class='reason-list-description'>
-          スマホで入力するだけで簡単に出品できる！
-        </p>
+        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
+        <span class='reason-list-number'>美容室</span>
+        
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro02.png", class:"list-pict" %>
-        <span class='reason-list-number'>2</span>
-        <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>シンプル</span>
-          で使いやすい
-        </h3>
-        <p class='reason-list-description'>
-          めんどくさい入力は必要なく、検索も購入もスムーズ！
-        </p>
+        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
+        <span class='reason-list-number'>マツエク</span>
+        
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro03.png", class:"list-pict" %>
-        <span class='reason-list-number'>3</span>
-        <h3 class='reason-list-text'>
-          手数料
-          <span class='reason-list-blue-text'>業界最安</span>
-        </h3>
-        <p class='reason-list-description'>
-          10%でお得に出品&購入！
-        </p>
+        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>ネイル</span>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>エステ</span>
+        
       </li>
     </ul>
-  </div>
-  <%# /FURIMAが選ばれる3つの理由部分 %>
-
-  <%# 画面中央の「会員数日本一位」帯部分 %>
-  <div class='ad-contents'>
-    <h2 class='ad-title'>
-      会員数日本一位
-    </h2>
-    <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
-    </p>
-    <p class='ad-explain'>
-      出品・購入回数も業界最多です！
-    </p>
-    <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
-    </p>
-    <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
     </div>
   </div>
-  <%# /画面中央の「会員数日本一位」帯部分 %>
+  <%# 予約選択 %>
 
-  <%# FURIMAの特徴 %>
-  <div class='feature-contents'>
+  <%# おすすめ美容室 %>
+<div class='select-reason-contents'>
     <h2 class='title'>
-      FURIMAの特徴
+      カットが評判の美容室
     </h2>
-    <ul class='feature-lists'>
+    <div>
+    <ul class='reason-lists'>
       <li class='list'>
-        <%= image_tag "furima-intro04.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          簡単に売り買いできる
-        </h3>
-        <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
-        </p>
+        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
+        <span class='reason-list-number'>美容室</span>
+        
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro05.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
-        </h3>
-        <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
-        </p>
+        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
+        <span class='reason-list-number'>マツエク</span>
+        
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro06.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          様々な支払いに対応
-        </h3>
-        <p class='feature-list-description'>
-          お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
-        </p>
+        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>ネイル</span>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>エステ</span>
+        
       </li>
     </ul>
+    </div>
   </div>
-  <%# /FURIMAの特徴 %>
+  <%# おすすめ美容室 %>
 
-  <%# 商品一覧 %>
-  <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
-    <%= link_to '新規投稿商品', "#", class: "subtitle" %>
-    <ul class='item-lists'>
+  <%# おすすめアイラッシュ %>
+<div class='select-reason-contents'>
+    <h2 class='title'>
+      デザインが人気のネイルサロン
+    </h2>
+    <div>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
+        <span class='reason-list-number'>美容室</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
+        <span class='reason-list-number'>マツエク</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>ネイル</span>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>エステ</span>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
+  <%# おすすめアイラッシュ %>
+
+    <%# おすすめネイル %>
+<div class='select-reason-contents'>
+    <h2 class='title'>
+      マツエクが評判のマツエクサロン
+    </h2>
+    <div>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
+        <span class='reason-list-number'>美容室</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
+        <span class='reason-list-number'>マツエク</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>ネイル</span>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>エステ</span>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
+  <%# おすすめネイル %>
+
+    <%# おすすめエステ %>
+<div class='select-reason-contents'>
+    <h2 class='title'>
+      マッサージが評判のエステサロン
+    </h2>
+    <div>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
+        <span class='reason-list-number'>美容室</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
+        <span class='reason-list-number'>マツエク</span>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>ネイル</span>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
+        <span class='reason-list-number'>エステ</span>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
+  <%# おすすめエステ %>
+  <%# サイトの特徴 %>
+  <%# <div class="container-inner">
+      <h2 class="container-heading">tricoの3つの特徴</h2>
+      <div class="container-content">
+        <ul class="trico-features">
+          <li class="feature-item1">
+           <%# <img class="feature-item-img" src="/img/point-1.png" width="232" height="104" alt="サロンスタッフを直接予約">%>
+        <%#     <h3 class="feature-item-heading">プライベートサロンのみ</h3>
+            <p class="feature-item-description">人が多いサロンは避けたい・お子さんがいると気を遣うなど、悩みを気にしなくてもあなただけのプライベート空間です！</p>
+          </li>
+          <li class="feature-item2">
+           <%# <img class="feature-item-img" src="/img/point-2.png" width="232" height="104" alt="口コミが見られる">%>
+         <%#    <h3 class="feature-item-heading">口コミが見られる</h3>
+            <p class="feature-item-description">施術してほしいサロンの口コミを事前に確認できるので安心です。</p>
+          </li>
+          <li class="feature-item3">
+           <%# <img class="feature-item-img" src="/img/point-3.png" width="232" height="104" alt="サロンスタッフとやりとり">%>
+          <%#   <h3 class="feature-item-heading">サロンスタッフとやりとり</h3>
+            <p class="feature-item-description">事前にお願いしたいスタイルなどを相談・質問できるのでなりたい自分に近づけます。</p>
+      <%#     </li>
+        </ul>
+      </div><!-- /.container-content -->
+    <%# </div>%>
+    <%# サイトの特徴 %>
+  <%# Footer前 %>
+  <section class="trico-last-content">
+   <div class="container-inner">
+    <h2 class="container-heading-center">掲載をご希望のサロンオーナー様へ</h2>
+    <div class="container-content">
+      <p class="description">「trico（トリコ）」は美容師・ネイリスト・アイデザイナーなど、プライベートサロン限定の集客アプリです。</p>
+      <a href="＃" class="more-button">詳しく見る</a>
+    </div>
+   </div>
+  </section>
+  <%# /Footer前 %>
+
   <%#  <%= render partial: "product", collection: @products%>
 
     <%#<% if @salon.length == 0 %>
@@ -145,9 +229,14 @@
           </div>
         </div>
         <% end %>
-      </li>
+      <%#</li>
       <%#<% end %>
-    </ul>
+   <%# </ul>%>
+ <div>
+  <%= render "user_footer" %>
+</div>
   </div>
+ </div>
+
 </div>
-</div>
+

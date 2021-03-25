@@ -52,6 +52,7 @@ a {
 /* FURIMAが選ばれる3つの理由部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
+  background-color: maroon;
 }
 
 .select-reason-contents>.title {
@@ -77,10 +78,15 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 32px 48px 48px;
+  width: 100%;
+  max-width: 984px;
+  background: ghostwhite;;
 }
 
 .reason-lists>.list {
-  width: 33vh;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,6 +96,7 @@ a {
 .list-pict {
   margin-bottom: 20px;
   width: 100%;
+  height: 160px;
 }
 
 .reason-list-number {
@@ -98,11 +105,12 @@ a {
   left: 0;
   width: 60px;
   height: 60px;
-  font-size: 30px;
+  font-size: 15px;
   text-align: center;
   line-height: 60px;
-  background-color: #3ccace;
-  color: #fff;
+  color: rosybrown;
+  font-family: serif;
+  font-weight: bold;
 }
 
 .reason-list-text {
@@ -312,3 +320,74 @@ a {
 }
 
 /* //商品一覧 */
+/*footer前 */
+
+
+.trico-last-content {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  background-image: url('luxe.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  color: #fff;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.trico-last-content .container-inner {
+  position: relative;
+  padding: 48px 0;
+  background-color: transparent;
+}
+
+.trico-last-content .description {
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.trico-last-content .more-button {
+  -webkit-appearance: none;
+  width: 320px;
+  display: block;
+  cursor: pointer;
+  color: #444;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 3px -3px #000;
+  border: 0;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.container-heading{
+  color: blue;
+}
+
+.trico-features{
+  display: flex;
+}
+.feature-item1{
+  color: blue;
+}
+
+.feature-item2{
+  color: white;
+}
+
+.feature-item3{
+  color:red;
+}
+.container .container-inner {
+  margin: 0 auto;
+  padding: 32px 48px 48px;
+  width: 100%;
+  max-width: 984px;
+  background: #fff;
+}
