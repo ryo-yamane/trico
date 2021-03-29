@@ -7,4 +7,17 @@ class SalonsController < ApplicationController
 
   def choose_index
   end
+
+  def hair_index
+  end
+
+  def nail_index
+  end
+
+  def eyelash_index
+  end
+
+  def estetic_index
+  end
+
 end

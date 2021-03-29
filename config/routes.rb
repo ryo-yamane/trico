@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :salons, only: [:index] do
 
     collection do
-     get 'choose_index'
+     get 'choose_index','hair_index','nail_index','eyelash_index','estetic_index'
     end
   end
 

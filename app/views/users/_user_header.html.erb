@@ -11,10 +11,10 @@
   </div>
   <div class='user-nav'>
     <ul class='lists-left'>
-      <li><%= link_to '美容室', "#", class: "category-list" %></li>
-      <li><%= link_to 'ネイル', "#", class: "brand-list" %></li>
-      <li><%= link_to 'マツエク', "#", class: "brand-list" %></li>
-      <li><%= link_to 'エステ', "#", class: "brand-list" %></li>
+      <li><%= link_to '美容室', hair_index_salons_path, class: "category-list" %></li>
+      <li><%= link_to 'ネイル', nail_index_salons_path, class: "brand-list" %></li>
+      <li><%= link_to 'マツエク', eyelash_index_salons_path, class: "brand-list" %></li>
+      <li><%= link_to 'エステ', estetic_index_salons_path, class: "brand-list" %></li>
     </ul>
     <ul class='lists-right'>
       <% if user_signed_in?%>
