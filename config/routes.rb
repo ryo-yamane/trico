@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
  root to: 'salons#index'
   resources :users, only: [:new, :index]
+  resources :owners, only: [:index]
   resources :salons, only: [:index] do
 
     collection do
