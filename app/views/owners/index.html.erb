@@ -1,55 +1,39 @@
 <div>
-<%= render "user_header" %>
+<%= render "owner_header" %>
 <div class='main'>
 
-  <%# 画面上部の「非日常をあなたに」帯部分 %>
-  <div class='title-contents'>
-    <h2 class='service-title'>
-      非日常をあなたに
-    </h2>
-    <p class='service-explain'>
-      tricoは誰でも上質な体験をさせてくれる
-    </p>
-    <p class='service-explain'>
-      プライベートサロンだけを集めたアプリです
-    </p>
-   <%# <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-    <%#  <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
-    <%#</div>%>
-  </div>
-  <%# /画面上部の「非日常をあなたに」帯部分  %>
-
-  <%# 予約選択 %>
-  <div class='select-reason-contents'>
+  
+  <%# サイトからのお知らせ表示 %>
+  <div class='info-contents'>
     <h2 class='title'>
-      美容室・各種サロンを予約する
+      サイトからのお知らせ
     </h2>
     <div>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair",id:"hair"), hair_index_salons_path %>
-        <span class='reason-list-number'>美容室</span>
-        
+    <ul class='info-lists'>
+      <li class='info'>
+        <%= link_to  do %>
+          <p>○月○日・・・トップページをリニューアルしました</p>
+        <% end %>
       </li>
-      <li class='list'>
-        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),eyelash_index_salons_path %>
-        <span class='reason-list-number'>マツエク</span>
-        
+      <li class='info'>
+        <%= link_to  do %>
+          <p>○月○日・・・不具合を修正しました</p>
+        <% end %>
       </li>
-      <li class='list'>
-        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),nail_index_salons_path %>
-        <span class='reason-list-number'>ネイル</span>
+      <li class='info'>
+        <%= link_to  do %>
+          <p>○月○日・・・SNS活用セミナー申し込み受付中</p>
+        <% end %>
       </li>
-      <li class='list'>
-        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),estetic_index_salons_path %>
-        <span class='reason-list-number'>エステ</span>
-        
+      <li class='info'>
+        <%= link_to  do %>
+          <p>○月○日・・・TVCMのお知らせ</p>
+        <% end %>
       </li>
     </ul>
     </div>
   </div>
-  <%# 予約選択 %>
+  <%# サイトからのお知らせ表示 %>
 
   <%# おすすめ美容室 %>
 <div class='select-reason-contents'>
@@ -174,30 +158,6 @@
     </div>
   </div>
   <%# おすすめエステ %>
-  <%# サイトの特徴 %>
-  <%# <div class="container-inner">
-      <h2 class="container-heading">tricoの3つの特徴</h2>
-      <div class="container-content">
-        <ul class="trico-features">
-          <li class="feature-item1">
-           <%# <img class="feature-item-img" src="/img/point-1.png" width="232" height="104" alt="サロンスタッフを直接予約">%>
-        <%#     <h3 class="feature-item-heading">プライベートサロンのみ</h3>
-            <p class="feature-item-description">人が多いサロンは避けたい・お子さんがいると気を遣うなど、悩みを気にしなくてもあなただけのプライベート空間です！</p>
-          </li>
-          <li class="feature-item2">
-           <%# <img class="feature-item-img" src="/img/point-2.png" width="232" height="104" alt="口コミが見られる">%>
-         <%#    <h3 class="feature-item-heading">口コミが見られる</h3>
-            <p class="feature-item-description">施術してほしいサロンの口コミを事前に確認できるので安心です。</p>
-          </li>
-          <li class="feature-item3">
-           <%# <img class="feature-item-img" src="/img/point-3.png" width="232" height="104" alt="サロンスタッフとやりとり">%>
-          <%#   <h3 class="feature-item-heading">サロンスタッフとやりとり</h3>
-            <p class="feature-item-description">事前にお願いしたいスタイルなどを相談・質問できるのでなりたい自分に近づけます。</p>
-      <%#     </li>
-        </ul>
-      </div><!-- /.container-content -->
-    <%# </div>%>
-    <%# サイトの特徴 %>
   <%# Footer前 %>
   <section class="trico-last-content">
    <div class="container-inner">
@@ -211,7 +171,7 @@
   <%# /Footer前 %>
 
  <div>  
-  <%= render "user_footer" %>
+  <%= render "owner_footer" %>
  </div>
   </div>
  </div>
