@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   const tabMenu = document.getElementById("js-tab")
   const menuDetail = tabMenu.querySelectorAll("[data-id]")
   const menuMoreDetail = tabMenu.querySelectorAll("[data-menu]")
-  console.log(menuMoreDetail)
+  const tabMenuDetails = tabMenu.querySelectorAll(".tab-menu-detail");
   for(let i = 0; i < menuDetail.length; i++) {
     //タブメニュークリック時
     
@@ -27,16 +27,27 @@ window.addEventListener('load', () => {
       // クリックしたタブメニューに'is-active'クラスを追加
       currentMenu.classList.add('is-active');
 
+      //クリックされた時に is-active を追加/削除
+      for (const tabMenuDetail of tabMenuDetails) {
+        console.log(tabMenuDetail)
+        if (tabMenuDetail.id === currentMenu.dataset.id) {
+         tabMenuDetail.classList.add('is-active');
+        } else {
+         tabMenuDetail.classList.remove('is-active');
+        }
+      }
        // タブコンテンツを非アクティブにする
-       for(let i = 0; i < menuMoreDetail.length; i++) {
-         menuMoreDetail[i].classList.remove('is-active');
-       }
+       //for(let i = 0; i < menuMoreDetail.length; i++) {
+        // menuMoreDetail[i].classList.remove('is-active');
+       
        // 対象コンテンツ(指定したIDの要素があったら)を表示させる
-       if(currentContent !== null) {
-         currentContent.classList.add('is-active');
-       } else {
-         currentContent.classList.remove('is-active');
-       }
+      // if(currentContent !== null) {
+       //  currentContent.classList.add('is-active');
+      // } else {
+      //   currentContent.classList.remove('is-active');
+      // }
+
+       
 
     })
   }    

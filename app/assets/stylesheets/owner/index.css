@@ -108,6 +108,11 @@
     
 }
 
+/*teratailの人アドバイス
+/*.is-active+.tab-menu-detail {
+  display: flex;
+}
+
 /* タブコンテンツ */
 .tab-content {
   border: 1px solid #ccc;
