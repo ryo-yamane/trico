@@ -128,7 +128,7 @@ belongs_to :salon
 | ----------------------------- | ----------  | ---------------------------- |
 | booking                       | references  |null: false, foreign_key: true|
 | salon                         | references  |null: false, foreign_key: true|
-
+| booking_time                  | references  |null: false, foreign_key: true|
 
 ### Association
 belongs_to :salon

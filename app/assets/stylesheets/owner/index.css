@@ -95,6 +95,7 @@
   display: flex;
 }
 
+
 .second-menu {
     width: 100%;
     text-align: left;
@@ -116,7 +117,7 @@
 /* タブコンテンツ */
 .tab-content {
   border: 1px solid #ccc;
-  display: none;
+
 }
 .tab-content__item {
   box-sizing: border-box;
@@ -124,9 +125,13 @@
   display: none;
   text-align: left;
 }
-.tab-content__item.is-active {
-  display: block;
-  animation: fade 0.5s ease;
+
+.tab-content__item .tab-content__item {
+  display: block; /* display: none を打ち消し */
+}
+
+.tab-content__item:active {
+  display:flex;
 }
 
 @keyframes fade {

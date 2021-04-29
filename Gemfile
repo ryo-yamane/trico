@@ -61,6 +61,7 @@ gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 gem 'omniauth', '~>1.9.1'
 gem 'pry-rails'
+gem 'simple_calendar', '~> 2.0'
 
 group :development do
   gem 'rubocop', require: false
