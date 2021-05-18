@@ -38,7 +38,7 @@ DEMO画面
 [![Image from Gyazo](https://i.gyazo.com/d115b143087e7f73d0a01108dfd24873.gif)](https://gyazo.com/d115b143087e7f73d0a01108dfd24873)
 
 ユーザーサインイン〜会員トップページ(User)
-[![Image from Gyazo](https://i.gyazo.com/07858e75451255418cb5ed9c90ed0288.gif)](https://gyazo.com/07858e75451255418cb5ed9c90ed0288)
+[![Image from Gyazo](https://i.gyazo.com/ea4cc0e36c9943569da8fc526bf4c0fd.gif)](https://gyazo.com/ea4cc0e36c9943569da8fc526bf4c0fd)
 
 会員ログアウト挙動(User)
 [![Image from Gyazo](https://i.gyazo.com/07858e75451255418cb5ed9c90ed0288.gif)](https://gyazo.com/07858e75451255418cb5ed9c90ed0288)
