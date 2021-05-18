@@ -40,6 +40,8 @@ DEMO画面
 ユーザーサインイン〜会員トップページ
 [![Image from Gyazo](https://i.gyazo.com/74f3ea06994d303a7972d9f995badb8a.gif)](https://gyazo.com/74f3ea06994d303a7972d9f995badb8a)
 
+会員ログアウト挙動
+[![Image from Gyazo](https://i.gyazo.com/07858e75451255418cb5ed9c90ed0288.gif)](https://gyazo.com/07858e75451255418cb5ed9c90ed0288)
 
 ・DB設計						
 ## users テーブル
