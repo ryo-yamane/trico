@@ -37,6 +37,9 @@ DEMO画面
 トップページ〜ユーザー新規登録画面
 [![Image from Gyazo](https://i.gyazo.com/d115b143087e7f73d0a01108dfd24873.gif)](https://gyazo.com/d115b143087e7f73d0a01108dfd24873)
 
+ユーザーサインイン〜会員トップページ
+[![Image from Gyazo](https://i.gyazo.com/74f3ea06994d303a7972d9f995badb8a.gif)](https://gyazo.com/74f3ea06994d303a7972d9f995badb8a)
+
 
 ・DB設計						
 ## users テーブル
