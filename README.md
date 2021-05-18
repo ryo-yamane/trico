@@ -34,14 +34,19 @@
 　　サロン・・・・管理画面（予約、クーポン作成、メニュー作成、SNS投稿連携）
 
 DEMO画面
-トップページ〜ユーザー新規登録画面
+トップページ〜ユーザー新規登録画面(User)
 [![Image from Gyazo](https://i.gyazo.com/d115b143087e7f73d0a01108dfd24873.gif)](https://gyazo.com/d115b143087e7f73d0a01108dfd24873)
 
-ユーザーサインイン〜会員トップページ
+ユーザーサインイン〜会員トップページ(User)
 [![Image from Gyazo](https://i.gyazo.com/74f3ea06994d303a7972d9f995badb8a.gif)](https://gyazo.com/74f3ea06994d303a7972d9f995badb8a)
 
-会員ログアウト挙動
+会員ログアウト挙動(User)
 [![Image from Gyazo](https://i.gyazo.com/07858e75451255418cb5ed9c90ed0288.gif)](https://gyazo.com/07858e75451255418cb5ed9c90ed0288)
+
+トップページ〜ユーザー新規登録画面(Owner)
+[![Image from Gyazo](https://i.gyazo.com/cfe6794c4b34f5d8e3addfea27624faf.gif)](https://gyazo.com/cfe6794c4b34f5d8e3addfea27624faf)
+
+
 
 ・DB設計						
 ## users テーブル
