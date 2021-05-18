@@ -37,8 +37,11 @@ DEMO画面
 トップページ〜ユーザー新規登録画面(User)
 [![Image from Gyazo](https://i.gyazo.com/d115b143087e7f73d0a01108dfd24873.gif)](https://gyazo.com/d115b143087e7f73d0a01108dfd24873)
 
-ユーザーサインイン〜会員トップページ(User)
+ユーザーサインアップ〜会員トップページ(User)
 [![Image from Gyazo](https://i.gyazo.com/ea4cc0e36c9943569da8fc526bf4c0fd.gif)](https://gyazo.com/ea4cc0e36c9943569da8fc526bf4c0fd)
+
+ユーザーログイン機能（User)
+[![Image from Gyazo](https://i.gyazo.com/f3f3c388d7e49af929f7138e8a45063d.gif)](https://gyazo.com/f3f3c388d7e49af929f7138e8a45063d)
 
 会員ログアウト挙動(User)
 [![Image from Gyazo](https://i.gyazo.com/07858e75451255418cb5ed9c90ed0288.gif)](https://gyazo.com/07858e75451255418cb5ed9c90ed0288)
@@ -46,6 +49,14 @@ DEMO画面
 トップページ〜ユーザー新規登録画面(Owner)
 [![Image from Gyazo](https://i.gyazo.com/cfe6794c4b34f5d8e3addfea27624faf.gif)](https://gyazo.com/cfe6794c4b34f5d8e3addfea27624faf)
 
+ユーザーサインイン〜オーナートップページ(owner)
+
+
+ユーザーログイン機能(owner)
+[![Image from Gyazo](https://i.gyazo.com/4e82beb9d94236ac811dd98898e716b1.gif)](https://gyazo.com/4e82beb9d94236ac811dd98898e716b1)
+
+会員ログアウト挙動(owner)
+[![Image from Gyazo](https://i.gyazo.com/2e019bf9a4f7196ad7f5877b3632668c.gif)](https://gyazo.com/2e019bf9a4f7196ad7f5877b3632668c)
 
 
 ・DB設計						
