@@ -35,7 +35,8 @@
 
 DEMO画面
 トップページ〜ユーザー新規登録画面
-https://user-images.githubusercontent.com/78146211/118689025-90ffcb80-b841-11eb-94b5-2d3ec6a2754b.mp4
+[![Image from Gyazo](https://i.gyazo.com/d115b143087e7f73d0a01108dfd24873.gif)](https://gyazo.com/d115b143087e7f73d0a01108dfd24873)
+
 
 ・DB設計						
 ## users テーブル
