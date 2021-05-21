@@ -1,7 +1,7 @@
 <div>
 <%= render "owner_header" %>
 <div class='main'>
-
+<%# 一旦ここまで %>
   
   <%# サイトからのお知らせ表示 %>
   <div class='info-contents'>
@@ -35,141 +35,59 @@
   </div>
   <%# サイトからのお知らせ表示 %>
 
-  <%# おすすめ美容室 %>
-<div class='select-reason-contents'>
-    <h2 class='title'>
-      カットが評判の美容室
-    </h2>
-    <div>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
-        <span class='reason-list-number'>美容室</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
-        <span class='reason-list-number'>マツエク</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>ネイル</span>
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>エステ</span>
-        
-      </li>
+<div id="js-tab">
+<ul class="tab-menu" >
+  <li class="tab-menu__item"><span class="tab-trigger is-active" data-id="tab01">予約管理</span>
+    <ul class="tab-menu-detail" id="tab01">
+        <li class="second-menu " data-menu="1" unko-id="10">スケジュール確認</li>
+        <li class="second-menu " data-menu="2"unko-id="10">定休日選択</li>
     </ul>
-    </div>
-  </div>
-  <%# おすすめ美容室 %>
+  </li>
 
-  <%# おすすめアイラッシュ %>
-<div class='select-reason-contents'>
-    <h2 class='title'>
-      デザインが人気のネイルサロン
-    </h2>
-    <div>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
-        <span class='reason-list-number'>美容室</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
-        <span class='reason-list-number'>マツエク</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>ネイル</span>
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>エステ</span>
-        
-      </li>
+  <li class="tab-menu__item"><span class="tab-trigger " data-id="tab02">メニュー作成</span>
+    <ul class="tab-menu-detail" id="tab02">
+        <li class="second-menu is-active" data-menu="3">新規メニュー作成</li>
+        <li class="second-menu " data-menu="4">既存メニュー編集・削除</li>
     </ul>
-    </div>
-  </div>
-  <%# おすすめアイラッシュ %>
+  </li>
 
-    <%# おすすめネイル %>
-<div class='select-reason-contents'>
-    <h2 class='title'>
-      マツエクが評判のマツエクサロン
-    </h2>
-    <div>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
-        <span class='reason-list-number'>美容室</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
-        <span class='reason-list-number'>マツエク</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>ネイル</span>
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>エステ</span>
-        
-      </li>
+  <li class="tab-menu__item"><span class="tab-trigger " data-id="tab03">クーポン作成</span>
+    <ul class="tab-menu-detail" id="tab03">
+        <li class="second-menu  " data-menu="5">新規クーポン作成</li>
+        <li class="second-menu  " data-menu="6">既存クーポン編集・削除</li>
     </ul>
-    </div>
-  </div>
-  <%# おすすめネイル %>
+  </li>
 
-    <%# おすすめエステ %>
-<div class='select-reason-contents'>
-    <h2 class='title'>
-      マッサージが評判のエステサロン
-    </h2>
-    <div>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= link_to image_tag("hair2.jpg", class:"list-pict link-item hair"), "#" %>
-        <span class='reason-list-number'>美容室</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "eyelash.jpg", class:"list-pict link-item eyelash"),"#" %>
-        <span class='reason-list-number'>マツエク</span>
-        
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "nail.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>ネイル</span>
-      </li>
-      <li class='list'>
-        <%= link_to image_tag( "est.jpg", class:"list-pict linl-item nail"),"#" %>
-        <span class='reason-list-number'>エステ</span>
-        
-      </li>
+  <li class="tab-menu__item"><span class="tab-trigger " data-id="tab04">レビュー確認</span>
+    <ul class="tab-menu-detail" id="tab04">
+        <li class="second-menu  " data-menu="7">現在のレビュー</li>
+        <li class="second-menu  " data-menu="8">コメント返信</li>
     </ul>
-    </div>
-  </div>
-  <%# おすすめエステ %>
-  <%# Footer前 %>
-  <section class="trico-last-content">
-   <div class="container-inner">
-    <h2 class="container-heading-center">掲載をご希望のサロンオーナー様へ</h2>
-    <div class="container-content">
-      <p class="description">「trico（トリコ）」は美容師・ネイリスト・アイデザイナーなど、プライベートサロン限定の集客アプリです。</p>
-      <a href="＃" class="more-button">詳しく見る</a>
-    </div>
-   </div>
-  </section>
-  <%# /Footer前 %>
+  </li>
+</ul>
+<!-- .tab-menu -->
 
+<!-- .2段目めにゅ -->
+
+
+<!-- .メニュー内容 -->
+<div class="tab-content">
+  <div class="tab-content__item  " unko-menu="1" >
+    <p class="tab-content__item" >タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。タブ1のコンテンツが入ります。</p>
+  </div><!-- .tab-content__item -->
+  <div class="tab-content__item " unko-menu="2">
+    <p>タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。タブ2のコンテンツが入ります。</p>
+  </div><!-- .tab-content__item -->
+  <div class="tab-content__item " id="tab03">
+    <p>タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。</p>
+  </div><!-- .tab-content__item -->
+  <div class="tab-content__item " id="tab04">
+    <p>タブ4のコンテンツが入ります。タブ4のコンテンツが入ります。タブ4のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。タブ3のコンテンツが入ります。</p>
+  </div><!-- .tab-content__item -->
+</div><!-- .tab-content -->
+<%# /Footer前 %>
+</div>
+<%= render partial: "callender"%>
  <div>  
   <%= render "owner_footer" %>
  </div>

@@ -55,3 +55,90 @@
     -o-transition: all 0.3s ease;
     transition: all  0.3s ease;
 }
+
+/* タブメニュー */
+.tab-menu {
+  display: flex;
+  margin: 0 -5px;
+}
+
+.tab-menu__item {
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+}
+
+
+.tab-trigger { /* label */
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  background-color: lightgray;
+  position: relative;
+}
+
+.tab-trigger.is-active {
+  background-color: darkgoldenrod;
+  
+}
+
+/* ２段目たぶ */
+.tab-menu-detail{
+  display: none;
+}
+
+.tab-menu-detail.is-active {
+  display: flex;
+}
+
+
+.second-menu {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 6px;
+    border: 2px solid dimgray;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background-color: lightslategrey;
+    position: relative;
+    
+}
+
+/*teratailの人アドバイス
+/*.is-active+.tab-menu-detail {
+  display: flex;
+}
+
+/* タブコンテンツ */
+.tab-content {
+  border: 1px solid #ccc;
+
+}
+.tab-content__item {
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+  text-align: left;
+}
+
+.tab-content__item .tab-content__item {
+  display: block; /* display: none を打ち消し */
+}
+
+.tab-content__item:active {
+  display:flex;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
